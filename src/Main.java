@@ -1,4 +1,5 @@
 import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
         BMIService service = new BMIService();
@@ -13,13 +14,13 @@ public class Main {
         input.close();
         float BMI = service.calculate(weight, high);
         System.out.println(BMI);
-        if (BMI > 20 && BMI< 25) {
+        if (BMI > 20 && BMI < 25) {
             System.out.println("Good job, stay fit");
         }
         if (BMI < 20) {
             System.out.println("You have to eat pizza every day");
         }
-        if (BMI>25) {
+        if (BMI > 25) {
             System.out.println("Run Run Run");
         }
     }
